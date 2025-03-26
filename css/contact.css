@@ -1,0 +1,100 @@
+:root{
+    --base-color: white;
+    --base-variant: #f0ecdf;
+    --text-color: #1c1f25;
+    --secondary-color: #25282e;
+    --primary-color: #32353b;
+    --accent-color: #3b5998;
+}
+.darkmode{
+    --base-color:  #1c1f25;
+    --base-variant: #25282e;
+    --text-color: antiquewhite;
+    --secondary-color: whitesmoke;
+    --primary-color: #32353b; 
+    --accent-color: #3b5998;
+}
+span{
+    color: var(--secondary-color);
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+body{
+    background-color: var(--base-color);
+}
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centers content vertically */
+    font-size: 2vh;
+    background-color: var(--base-variant);
+    padding: 20px 40px; /* Increase padding for a bigger look */
+}
+
+
+/*--------------Top is on every page---------------*/
+
+.first-half{
+    background: url('/contact.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 75vh;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.maintext{
+    color: white;
+    font-size: 4vh;
+}
+
+input[type="text"] {
+    max-width: 200px;
+    width: 25%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    text-align: center;
+}
+
+input[type="text"]:focus {
+border-color: #007bff;
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+input.Description {
+    max-width: 1000px;
+    width: 50%;
+    height: 15vh;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-align:center;
+}
+.submit{
+    margin-top: 10px;
+    width: 75px;
+    height: 25px;
+}
+
+.second-half{
+    background-color: var(--base-variant);
+    width: 100%;
+    height: 18vh;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* optional spacing between boxes */
+
+}
+
+.lines1,
+.lines2,
+.lines3{
+    margin-left: 10px;
+
+}
