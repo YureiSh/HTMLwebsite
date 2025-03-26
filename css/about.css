@@ -1,0 +1,82 @@
+/*
+display: flex;
+flex-direction: column;
+align-items: center;
+*/
+:root{
+    --base-color: white;
+    --base-variant: #f0ecdf;
+    --text-color: #1c1f25;
+    --secondary-color: #25282e;
+    --primary-color: #32353b;
+    --accent-color: #3b5998;
+}
+.darkmode{
+    --base-color:  #1c1f25;
+    --base-variant: #25282e;
+    --text-color: antiquewhite;
+    --secondary-color: whitesmoke;
+    --primary-color: #32353b; 
+    --accent-color: #3b5998;
+}
+span{
+    color: var(--secondary-color);
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+body{
+    background-color: var(--base-color);
+}
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centers content vertically */
+    background-color: var(--base-variant);
+    padding: 20px 40px; /* Increase padding for a bigger look */
+}
+.box{
+    background: url('/arm.jpeg') no-repeat center center/cover;
+    background-size: 100% 100%; /* Force the background to stretch to the full size of the container */
+    flex-grow: 1;
+    width: 100%;
+    height: 80vh;
+}
+.box #box-title {
+    display: flex;
+    flex-direction: row;
+
+    white-space: nowrap;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
+    color: antiquewhite;
+    text-align: center;
+    font-size: 7vw; /*Note: Using vw instead of px is much more applicable for considering different screen formats*/
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    z-index: 3;
+}
+.box-2{
+    display: flex;
+}
+.comms-1{ 
+
+    border: 1px solid var(--secondary-color);
+    border-right-width: 0px;
+    padding: 5px;
+}
+.comms-2{
+    
+    border: 1px solid var(--secondary-color);
+    padding: 5px;
+}
+p{
+    color: var(--text-color);
+}
+h4{
+    color: var(--text-color);
+}

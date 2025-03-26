@@ -1,0 +1,49 @@
+:root{
+    --base-color: white;
+    --base-variant: #f0ecdf;
+    --text-color: #1c1f25;
+    --secondary-color: #25282e;
+    --primary-color: #32353b;
+    --accent-color: #3b5998;
+}
+.darkmode{
+    --base-color:  #1c1f25;
+    --base-variant: #25282e;
+    --text-color: antiquewhite;
+    --secondary-color: whitesmoke;
+    --primary-color: #32353b; 
+    --accent-color: #3b5998;
+}
+body{
+    background-color: var(--base-color);
+}
+span,
+h2,
+h3,
+h1{
+    color: var(--text-color);
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.itemsinmid,
+.projects,
+.opensource,
+.education{
+    border: 2px solid var(--secondary-color); 
+
+}
+.opensource{
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+}
+.commentBox{
+    border-radius: 10%; 
+    border: 1px solid var(--secondary-color);
+    display: flex; 
+    height: 200px; 
+    width: 30%;
+
+}
